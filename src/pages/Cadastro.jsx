@@ -3,7 +3,7 @@ import React from 'react'
 const Cadastro = () => {
     return (
         <div>
-            <h1>OI</h1>
+            <h1>Pagina está em processo de desenvolvimento</h1>
         </div>
     )
 }

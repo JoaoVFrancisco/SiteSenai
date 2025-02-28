@@ -9,7 +9,7 @@ import styles from './css/NavBar.module.css';
 
 const NavBar = () => {
   return (
-    <Navbar style={{ backgroundColor: '#2029ad' ,}} data-bs-theme="dark">
+    <Navbar style={{ backgroundColor: '#2029ad'}} data-bs-theme="dark">
         <Container>
           <Navbar.Brand href='/'>Senai</Navbar.Brand>
           <Nav className={styles.nav}>

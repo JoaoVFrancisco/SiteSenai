@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import { useState } from "react";
+import styles from "./css/CardsCursos.module.css"
 
 function BasicExample() {
   const [cards] = useState([
@@ -34,9 +35,10 @@ function BasicExample() {
     },
   ]);
   return (
-    <>
+     <div className={styles.Cards}>
       {cards.map((card) => (
-        <Card key={card.id} style={{ width: "18rem" }}>
+         <Card key={card.id} style={{ width: "18rem"}}
+          >
           <Card.Img variant="top" src={card.imagem} />
           <Card.Body>
             <Card.Title>{card.titulo}</Card.Title>
@@ -52,7 +54,7 @@ function BasicExample() {
       </Card.Body>
         </Card>
       ))}
-    </>
+    </div>
   );
 }
 
